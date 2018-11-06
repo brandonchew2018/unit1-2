@@ -1,0 +1,77 @@
+Math operators: #math, #operators, #built-in
+
++ adds; x+y returns math value x+y
+- subtracts; x-y returns math value x-y
+* multiplies; x*y returns math value x*y
+/ divides; x/y returns math value x/y
+// divides as an int; x//y returns math value x/y, but casted as an int(floored)
+% modulates; x%y returns math value x%y (remainder of x/y)
+** exponentiates; x**y returns math value of x^y(not the bitwise or function)
+abs(x); returns absolute value of x
+range(x), generates x numbers, from 0 to x-1
+range(x,y) generates numbers x to y-1
+range(x,y,z) generates numbers from x to y-1, with step size of z
+
+Math library: #math
+round(float x); rounds numerically
+ceil(float x); returns smallest integer greater than x
+sqrt(float or int x); returns the squre root of x
+floor(float x); returns first less x
+log(float or int x); returns ln(x)
+log(float or int x, float or int a); returns log base x of a 
+pi; it's pi
+e; Euler's number
+sin(x); radians(for all trig)
+cos(x);
+tan(x);
+asin(x);
+
+Importing: #import
+import _library; imports library
+from _library import _method/object ;imports only one method or object from library, acts as though static
+
+Printing: #print
+print(string); prints out string on its own line
+print(string1,string2,string3...) prints out each string on the same line, with a space between each item
+print(string1+string2+string3...) prints out all strings on the same line, without spaces in between, but '' must be used instead of ""
+print(string1, ..., sep="string2", end="string3"); prints string1 and on, delimiting with string2 and ending with string3 (will not print on its own line if end != \n)
+
+
+Commenting: #comment
+# makes a "till end of line" comment; #comment
+
+Logical Operators: #logic, #logical, #operators
+a < b ; less than
+a > b ; greater than
+a <= b ; less than or equal to
+a >= b ; greater than or equal to
+a == b ; equal to
+a != b ; not equal to
+and; &&
+or; ||
+not; use to negate boolean expressions
+
+Input: #input
+input(string str) returns typed string; even if it starts as a double
+
+Casting: #casting
+int(string str); casts string as an int
+str(any number format)
+bool(string or number); casts empty strings and 0 as False and any full strings or the number 1 as True (booleans in python are capitalized)
+
+Conditionals: #if, #else, #while, #for
+if(boolean or boolean expression):
+    code1
+elif(boolean or boolean expression):
+    code2
+else:
+    code3
+    
+; executes code based on conditions calling true or false (will not cascade)
+
+for x in (range (y,z), string, list, collection, collection of collections, etc.):
+    code 1
+    
+; executes code 1 based on iterations of conditional( 1 at a time) note: lists can be differnt types
+
+Types:
