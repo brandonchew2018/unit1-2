@@ -59,6 +59,7 @@ int(string str); casts string as an int
 str(any number format)
 bool(string or number); casts empty strings and 0 as False and any full strings or the number 1 as True (booleans in python are capitalized)
 
+variables can be assigned as in "a, b = 0, 1"
 Conditionals: #if, #else, #while, #for
 if(boolean or boolean expression):
     code1
@@ -73,6 +74,14 @@ for x in (range (y,z), string, list, collection, collection of collections, etc.
     code 1
     
 ; executes code 1 based on iterations of conditional( 1 at a time) note: lists can be differnt types
+
+while(condition x):
+    code1
+else:
+    code2
+; executes code1 while x returns true. If it returns false, code2 runs once. If the while loops breaks before x returns false, code2 will not run
+;if continue is met, the remaining instructions will be skipped and the next iteration started
+
 
 Strings: #strings
 str[int x: int y] ; returns substring from x to y, not including y (if you use a negative index, it will start from the end of the string)
